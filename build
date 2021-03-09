@@ -1,0 +1,4 @@
+#!/bin/bash
+
+kramdown-rfc2629 draft-iana-int-historic.mkd > draft-iana-int-historic.xml
+xml2rfc draft-iana-int-historic.xml
