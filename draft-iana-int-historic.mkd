@@ -95,8 +95,8 @@ them have long since stopped using them.
 ## atma.int
 
 The atma.int domain was experimentally defined to implement address
-lookups for Asynchronous Transfer Mode End System Addresses (AESAs).
-{{ANS}}
+lookups for Asynchronous Transfer Mode (ATM), including ATM End System
+Addresses (AESAs). {{ANS}}
 
 ## ip4.int
 
