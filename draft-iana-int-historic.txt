@@ -171,9 +171,7 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
 
    be cautious about any potential re-use of these domains for
-   intergovernmental treaty organizations.  At a minimum it is
-   recommended there be a significant period of non-delegation following
-   their removal.
+   intergovernmental treaty organizations.
 
 5.  Informative References
 
@@ -218,6 +216,8 @@ Notes (for removal before publication)
    their purpose based on historical documentation.  Following this
    review, the remaining domains delegated for infrastructure identifier
    related purposes were brought to the IETF leadership for a
+   preliminary discussion on how they should be treated.  It was
+
 
 
 
@@ -226,7 +226,6 @@ Davies & Baber         Expires September 10, 2021               [Page 4]
 Internet-Draft         Infrastructure .int domains            March 2021
 
 
-   preliminary discussion on how they should be treated.  It was
    assessed that these domains are highly likely to be obsolete and this
    document is intended to formalize that assessment.
 
@@ -262,6 +261,7 @@ Authors' Addresses
    United States of America
 
    Email: amanda.baber@iana.org
+
 
 
 
