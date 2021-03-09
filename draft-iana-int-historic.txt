@@ -66,7 +66,7 @@ Internet-Draft         Infrastructure .int domains            March 2021
    national governments.
 
    Historically, the "int" domain was also used for Internet
-   infrastructure related purposes.  This practice ended in 2000 when
+   infrastructure related purposes.  This practice ended in 2001 when
    the "arpa" domain was declared the appropriate home for
    infrastructural identifier spaces [RFC3172].  In conjunction with
    this change, the eligibility for "int" domains was limited to only
