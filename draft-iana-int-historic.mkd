@@ -125,7 +125,7 @@ system.
 ## reg.int
 
 The reg.int domain name hosted an experimental mechanism for publishing
-IANA registraton values in the domain name system.
+IANA registration values in the domain name system.
 
 ## tpc.int
 

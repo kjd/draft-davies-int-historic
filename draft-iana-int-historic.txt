@@ -146,7 +146,7 @@ Internet-Draft         Infrastructure .int domains            March 2021
 2.5.  reg.int
 
    The reg.int domain name hosted an experimental mechanism for
-   publishing IANA registraton values in the domain name system.
+   publishing IANA registration values in the domain name system.
 
 2.6.  tpc.int
 
