@@ -153,15 +153,15 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
    o  tpc.int
 
-   If necessary, this document may serve as a reference for these
-   domains' prior purpose and deprecation.
-
 4.  Security Considerations
 
    Some old systems might have one or more subdomains of these names
    hardwired and expect a positive response for at least the second-
    level domain.  This is, of course, true for any name in the DNS and
    should not be the sole basis to retain obsolete names.
+
+   Existing applications should eliminate any reliance upon these zones
+   for their historic purpose.  The operator of the "int" domain should
 
 
 
@@ -170,8 +170,6 @@ Davies & Baber          Expires September 9, 2021               [Page 3]
 Internet-Draft         Infrastructure .int domains            March 2021
 
 
-   Existing applications should eliminate any reliance upon these zones
-   for their historic purpose.  The operator of the "int" domain should
    be cautious about any potential re-use of these domains for
    intergovernmental treaty organizations.  At a minimum it is
    recommended there be a significant period of non-delegation following
@@ -218,6 +216,8 @@ Notes (for removal before publication)
    This document is the result of an comprehensive inventory conducted
    by the IANA team of .int domains to accurately establish and record
    their purpose based on historical documentation.  Following this
+   review, the remaining domains delegated for infrastructure identifier
+   related purposes were brought to the IETF leadership for a
 
 
 
@@ -226,8 +226,6 @@ Davies & Baber          Expires September 9, 2021               [Page 4]
 Internet-Draft         Infrastructure .int domains            March 2021
 
 
-   review, the remaining domains delegated for infrastructure identifier
-   related purposes were brought to the IETF leadership for a
    preliminary discussion on how they should be treated.  It was
    assessed that these domains are highly likely to be obsolete and this
    document is intended to formalize that assessment.
@@ -264,6 +262,8 @@ Authors' Addresses
    United States of America
 
    Email: amanda.baber@iana.org
+
+
 
 
 

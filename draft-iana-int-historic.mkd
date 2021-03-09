@@ -143,9 +143,6 @@ The IANA shall coordinate the removal of the following "int" domains:
 - reg.int
 - tpc.int
 
-If necessary, this document may serve as a reference for these domains'
-prior purpose and deprecation. 
-
 # Security Considerations
 
 Some old systems might have one or more subdomains of these names
