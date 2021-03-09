@@ -58,23 +58,6 @@ Davies & Baber          Expires September 9, 2021               [Page 1]
 Internet-Draft         Infrastructure .int domains            March 2021
 
 
-Table of Contents
-
-   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
-   2.  Historical infrastructural uses . . . . . . . . . . . . . . .   2
-     2.1.  atma.int  . . . . . . . . . . . . . . . . . . . . . . . .   3
-     2.2.  ip4.int . . . . . . . . . . . . . . . . . . . . . . . . .   3
-     2.3.  nsap.int  . . . . . . . . . . . . . . . . . . . . . . . .   3
-     2.4.  rdi.int . . . . . . . . . . . . . . . . . . . . . . . . .   3
-     2.5.  reg.int . . . . . . . . . . . . . . . . . . . . . . . . .   3
-     2.6.  tpc.int . . . . . . . . . . . . . . . . . . . . . . . . .   3
-   3.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
-   4.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
-   5.  Informative References  . . . . . . . . . . . . . . . . . . .   4
-   Notes (for removal before publication)  . . . . . . . . . . . . .   5
-   Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . .   5
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
-
 1.  Introduction
 
    The "int" top-level domain [RFC1591] is a specialized domain
@@ -102,18 +85,6 @@ Table of Contents
    names was either delegated or documented at one time, the parties
    administering them have long since stopped using them.
 
-
-
-
-
-
-
-
-Davies & Baber          Expires September 9, 2021               [Page 2]
-
-Internet-Draft         Infrastructure .int domains            March 2021
-
-
 2.1.  atma.int
 
    The atma.int domain was experimentally defined to implement address
@@ -130,6 +101,18 @@ Internet-Draft         Infrastructure .int domains            March 2021
    The ip6.int domain was similarly delegated, and subsequently removed
    from the "int" zone, having been replaced by ip6.arpa for the purpose
    of mapping host IPv6 addresses to host names [RFC4159].
+
+
+
+
+
+
+
+
+Davies & Baber          Expires September 9, 2021               [Page 2]
+
+Internet-Draft         Infrastructure .int domains            March 2021
+
 
 2.3.  nsap.int
 
@@ -162,14 +145,6 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
    o  ip4.int
 
-
-
-
-Davies & Baber          Expires September 9, 2021               [Page 3]
-
-Internet-Draft         Infrastructure .int domains            March 2021
-
-
    o  nsap.int
 
    o  rdi.int
@@ -187,6 +162,13 @@ Internet-Draft         Infrastructure .int domains            March 2021
    hardwired and expect a positive response for at least the second-
    level domain.  This is, of course, true for any name in the DNS and
    should not be the sole basis to retain obsolete names.
+
+
+
+Davies & Baber          Expires September 9, 2021               [Page 3]
+
+Internet-Draft         Infrastructure .int domains            March 2021
+
 
    Existing applications should eliminate any reliance upon these zones
    for their historic purpose.  The operator of the "int" domain should
@@ -218,14 +200,6 @@ Internet-Draft         Infrastructure .int domains            March 2021
               RFC 1591, DOI 10.17487/RFC1591, March 1994,
               <https://www.rfc-editor.org/info/rfc1591>.
 
-
-
-
-Davies & Baber          Expires September 9, 2021               [Page 4]
-
-Internet-Draft         Infrastructure .int domains            March 2021
-
-
    [RFC1706]  Manning, B. and R. Colella, "DNS NSAP Resource Records",
               RFC 1706, DOI 10.17487/RFC1706, October 1994,
               <https://www.rfc-editor.org/info/rfc1706>.
@@ -244,6 +218,14 @@ Notes (for removal before publication)
    This document is the result of an comprehensive inventory conducted
    by the IANA team of .int domains to accurately establish and record
    their purpose based on historical documentation.  Following this
+
+
+
+Davies & Baber          Expires September 9, 2021               [Page 4]
+
+Internet-Draft         Infrastructure .int domains            March 2021
+
+
    review, the remaining domains delegated for infrastructure identifier
    related purposes were brought to the IETF leadership for a
    preliminary discussion on how they should be treated.  It was
@@ -274,14 +256,6 @@ Authors' Addresses
    Email: kim.davies@iana.org
 
 
-
-
-
-Davies & Baber          Expires September 9, 2021               [Page 5]
-
-Internet-Draft         Infrastructure .int domains            March 2021
-
-
    Amanda Baber
    Internet Assigned Numbers Authority
    PTI/ICANN
@@ -303,34 +277,4 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Davies & Baber          Expires September 9, 2021               [Page 6]
+Davies & Baber          Expires September 9, 2021               [Page 5]

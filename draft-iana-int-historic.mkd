@@ -10,8 +10,7 @@ kw: Internet-Draft
 cat: bcp
 updates: RFC1591 et al.
 pi:
-  toc: yes
-  tocdepth: 4
+  toc: no 
   sortrefs: yes
   symrefs: yes
 
