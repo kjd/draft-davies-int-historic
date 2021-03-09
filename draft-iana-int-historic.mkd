@@ -88,10 +88,10 @@ domain name system.
 
 # Historical infrastructural uses
 
-The following domains were used for infrastructural identifier
-purposes that are now considered historic. Although each of these
-names were was either delegated or documented at one time, the parties
-administering them have long since stopped using them.
+The following domains were used for infrastructural identifier purposes
+that are now considered historic. Although each of these names was
+either delegated or documented at one time, the parties administering
+them have long since stopped using them.
 
 ## atma.int
 
@@ -102,12 +102,12 @@ lookups for Asynchronous Transfer Mode End System Addresses (AESAs).
 ## ip4.int
 
 The ip4.int domain was described as providing an alternative to
-in-addr.arpa domain for mapping host IPv4 addresses to host names
-(draft-manning-ip4.int-roe-00). The in-addr.arpa domain zone continues
-to be administered for this purpose {{RFC1035}}.
+in-addr.arpa domain for mapping host IPv4 addresses to host names. The
+in-addr.arpa domain zone continues to be administered for this purpose
+{{RFC1035}}.
 
 The ip6.int domain was similarly delegated, and subsequently removed
-from the int zone, having been replaced by ip6.arpa for the purpose of
+from the "int" zone, having been replaced by ip6.arpa for the purpose of
 mapping host IPv6 addresses to host names {{RFC4159}}.
 
 ## nsap.int
