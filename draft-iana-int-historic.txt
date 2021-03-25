@@ -4,9 +4,9 @@
 
 Network Working Group                                          K. Davies
 Internet-Draft                                                  A. Baber
-Updates: RFC1591 et al. (if approved)                               IANA
-Intended status: Best Current Practice                    March 09, 2021
-Expires: September 10, 2021
+Updates: RFC1591 (if approved)                                      IANA
+Intended status: Informational                            March 25, 2021
+Expires: September 26, 2021
 
 
                 Deprecating infrastructure "int" domains
@@ -34,7 +34,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on September 10, 2021.
+   This Internet-Draft will expire on September 26, 2021.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Davies & Baber         Expires September 10, 2021               [Page 1]
+Davies & Baber         Expires September 26, 2021               [Page 1]
 
 Internet-Draft         Infrastructure .int domains            March 2021
 
@@ -109,7 +109,7 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
 
 
-Davies & Baber         Expires September 10, 2021               [Page 2]
+Davies & Baber         Expires September 26, 2021               [Page 2]
 
 Internet-Draft         Infrastructure .int domains            March 2021
 
@@ -165,7 +165,7 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
 
 
-Davies & Baber         Expires September 10, 2021               [Page 3]
+Davies & Baber         Expires September 26, 2021               [Page 3]
 
 Internet-Draft         Infrastructure .int domains            March 2021
 
@@ -221,7 +221,7 @@ Notes (for removal before publication)
 
 
 
-Davies & Baber         Expires September 10, 2021               [Page 4]
+Davies & Baber         Expires September 26, 2021               [Page 4]
 
 Internet-Draft         Infrastructure .int domains            March 2021
 
@@ -277,4 +277,4 @@ Authors' Addresses
 
 
 
-Davies & Baber         Expires September 10, 2021               [Page 5]
+Davies & Baber         Expires September 26, 2021               [Page 5]
