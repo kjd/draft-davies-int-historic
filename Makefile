@@ -1,4 +1,4 @@
-base:	draft-iana-int-historic.txt
+base:	draft-davies-int-historic.txt
 
-draft-iana-int-historic.txt draft-iana-int-historic.xml:	draft-iana-int-historic.mkd
+draft-davies-int-historic.txt draft-davies-int-historic.xml:	draft-davies-int-historic.mkd
 	sh build

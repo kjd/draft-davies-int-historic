@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head profile="http://www.w3.org/2006/03/hcard http://dublincore.org/documents/2008/08/04/dc-html/">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+
+  <title>Deprecating infrastructure "int" domains</title>
+
+  <style type="text/css" title="Xml2Rfc (sans serif)">
+  /*<![CDATA[*/
+	  a {
+	  text-decoration: none;
+	  }
+      /* info code from SantaKlauss at http://www.madaboutstyle.com/tooltip2.html */
+      a.info {
+          /* This is the key. */
+          position: relative;
+          z-index: 24;
+          text-decoration: none;
+      }
+      a.info:hover {
+          z-index: 25;
+          color: #FFF; background-color: #900;
+      }
+      a.info span { display: none; }
+      a.info:hover span.info {
+          /* The span will display just on :hover state. */
+          display: block;
+          position: absolute;
+          font-size: smaller;
+          top: 2em; left: -5em; width: 15em;
+          padding: 2px; border: 1px solid #333;
+          color: #900; background-color: #EEE;
+          text-align: left;
+      }
+	  a.smpl {
+	  color: black;
+	  }
+	  a:hover {
+	  text-decoration: underline;
+	  }
+	  a:active {
+	  text-decoration: underline;
+	  }
+	  address {
+	  margin-top: 1em;
+	  margin-left: 2em;
+	  font-style: normal;
+	  }
+	  body {
+	  color: black;
+	  font-family: verdana, helvetica, arial, sans-serif;
+	  font-size: 10pt;
+	  max-width: 55em;
+	  
+	  }
+	  cite {
+	  font-style: normal;
+	  }
+	  dd {
+	  margin-right: 2em;
+	  }
+	  dl {
+	  margin-left: 2em;
+	  }
+	
+	  ul.empty {
+	  list-style-type: none;
+	  }
+	  ul.empty li {
+	  margin-top: .5em;
+	  }
+	  dl p {
+	  margin-left: 0em;
+	  }
+	  dt {
+	  margin-top: .5em;
+	  }
+	  h1 {
+	  font-size: 14pt;
+	  line-height: 21pt;
+	  page-break-after: avoid;
+	  }
+	  h1.np {
+	  page-break-before: always;
+	  }
+	  h1 a {
+	  color: #333333;
+	  }
+	  h2 {
+	  font-size: 12pt;
+	  line-height: 15pt;
+	  page-break-after: avoid;
+	  }
+	  h3, h4, h5, h6 {
+	  font-size: 10pt;
+	  page-break-after: avoid;
+	  }
+	  h2 a, h3 a, h4 a, h5 a, h6 a {
+	  color: black;
+	  }
+	  img {
+	  margin-left: 3em;
+	  }
+	  li {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol p {
+	  margin-left: 0em;
+	  }
+	  p {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  pre {
+	  margin-left: 3em;
+	  background-color: lightyellow;
+	  padding: .25em;
+	  }
+	  pre.text2 {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f0f0f0;
+	  width: 69em;
+	  }
+	  pre.inline {
+	  background-color: white;
+	  padding: 0em;
+	  }
+	  pre.text {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  width: 69em;
+	  }
+	  pre.drawing {
+	  border-style: solid;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  padding: 2em;
+	  }
+	  table {
+	  margin-left: 2em;
+	  }
+	  table.tt {
+	  vertical-align: top;
+	  }
+	  table.full {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.headers {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.tt td {
+	  vertical-align: top;
+	  }
+	  table.full td {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.tt th {
+	  vertical-align: top;
+	  }
+	  table.full th {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.headers th {
+	  border-style: none none inset none;
+	  border-width: 1px;
+	  }
+	  table.left {
+	  margin-right: auto;
+	  }
+	  table.right {
+	  margin-left: auto;
+	  }
+	  table.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	  }
+	  caption {
+	  caption-side: bottom;
+	  font-weight: bold;
+	  font-size: 9pt;
+	  margin-top: .5em;
+	  }
+	
+	  table.header {
+	  border-spacing: 1px;
+	  width: 95%;
+	  font-size: 10pt;
+	  color: white;
+	  }
+	  td.top {
+	  vertical-align: top;
+	  }
+	  td.topnowrap {
+	  vertical-align: top;
+	  white-space: nowrap; 
+	  }
+	  table.header td {
+	  background-color: gray;
+	  width: 50%;
+	  }
+	  table.header a {
+	  color: white;
+	  }
+	  td.reference {
+	  vertical-align: top;
+	  white-space: nowrap;
+	  padding-right: 1em;
+	  }
+	  thead {
+	  display:table-header-group;
+	  }
+	  ul.toc, ul.toc ul {
+	  list-style: none;
+	  margin-left: 1.5em;
+	  margin-right: 0em;
+	  padding-left: 0em;
+	  }
+	  ul.toc li {
+	  line-height: 150%;
+	  font-weight: bold;
+	  font-size: 10pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  ul.toc li li {
+	  line-height: normal;
+	  font-weight: normal;
+	  font-size: 9pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  li.excluded {
+	  font-size: 0pt;
+	  }
+	  ul p {
+	  margin-left: 0em;
+	  }
+	
+	  .comment {
+	  background-color: yellow;
+	  }
+	  .center {
+	  text-align: center;
+	  }
+	  .error {
+	  color: red;
+	  font-style: italic;
+	  font-weight: bold;
+	  }
+	  .figure {
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 9pt;
+	  }
+	  .filename {
+	  color: #333333;
+	  font-weight: bold;
+	  font-size: 12pt;
+	  line-height: 21pt;
+	  text-align: center;
+	  }
+	  .fn {
+	  font-weight: bold;
+	  }
+	  .hidden {
+	  display: none;
+	  }
+	  .left {
+	  text-align: left;
+	  }
+	  .right {
+	  text-align: right;
+	  }
+	  .title {
+	  color: #990000;
+	  font-size: 18pt;
+	  line-height: 18pt;
+	  font-weight: bold;
+	  text-align: center;
+	  margin-top: 36pt;
+	  }
+	  .vcardline {
+	  display: block;
+	  }
+	  .warning {
+	  font-size: 14pt;
+	  background-color: yellow;
+	  }
+	
+	
+	  @media print {
+	  .noprint {
+		display: none;
+	  }
+	
+	  a {
+		color: black;
+		text-decoration: none;
+	  }
+	
+	  table.header {
+		width: 90%;
+	  }
+	
+	  td.header {
+		width: 50%;
+		color: black;
+		background-color: white;
+		vertical-align: top;
+		font-size: 12pt;
+	  }
+	
+	  ul.toc a::after {
+		content: leader('.') target-counter(attr(href), page);
+	  }
+	
+	  ul.ind li li a {
+		content: target-counter(attr(href), page);
+	  }
+	
+	  .print2col {
+		column-count: 2;
+		-moz-column-count: 2;
+		column-fill: auto;
+	  }
+	  }
+	
+	  @page {
+	  @top-left {
+		   content: "Internet-Draft"; 
+	  } 
+	  @top-right {
+		   content: "December 2010"; 
+	  } 
+	  @top-center {
+		   content: "Abbreviated Title";
+	  } 
+	  @bottom-left {
+		   content: "Doe"; 
+	  } 
+	  @bottom-center {
+		   content: "Expires June 2011"; 
+	  } 
+	  @bottom-right {
+		   content: "[Page " counter(page) "]"; 
+	  } 
+	  }
+	
+	  @page:first { 
+		@top-left {
+		  content: normal;
+		}
+		@top-right {
+		  content: normal;
+		}
+		@top-center {
+		  content: normal;
+		}
+	  }
+  /*]]>*/
+  </style>
+
+  <link href="#rfc.toc" rel="Contents">
+<link href="#rfc.section.1" rel="Chapter" title="1 Introduction">
+<link href="#rfc.section.2" rel="Chapter" title="2 Historical infrastructural uses">
+<link href="#rfc.section.2.1" rel="Chapter" title="2.1 atma.int">
+<link href="#rfc.section.2.2" rel="Chapter" title="2.2 ip4.int">
+<link href="#rfc.section.2.3" rel="Chapter" title="2.3 nsap.int">
+<link href="#rfc.section.2.4" rel="Chapter" title="2.4 rdi.int">
+<link href="#rfc.section.2.5" rel="Chapter" title="2.5 reg.int">
+<link href="#rfc.section.2.6" rel="Chapter" title="2.6 tpc.int">
+<link href="#rfc.section.3" rel="Chapter" title="3 IANA Considerations">
+<link href="#rfc.section.4" rel="Chapter" title="4 Security Considerations">
+<link href="#rfc.references" rel="Chapter" title="5 Informative References">
+<link href="#rfc.notes_for_removal_before_publication_" rel="Chapter">
+<link href="#rfc.acknowledgments" rel="Chapter">
+<link href="#rfc.authors" rel="Chapter">
+
+
+  <meta name="generator" content="xml2rfc version 2.47.0 - https://tools.ietf.org/tools/xml2rfc" />
+  <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+
+  <meta name="dct.creator" content="Davies, K. and A. Baber" />
+  <meta name="dct.identifier" content="urn:ietf:id:draft-iana-int-historic-00" />
+  <meta name="dct.issued" scheme="ISO8601" content="2021-03-25" />
+  <meta name="dct.abstract" content="The document marks as historic any &#8220;int&#8221; domain names that were designated for infrastructure purposes, and identifies them for removal from the &#8220;int&#8221; top-level domain. Any implementation that involves these domains should be considered deprecated. " />
+  <meta name="description" content="The document marks as historic any &#8220;int&#8221; domain names that were designated for infrastructure purposes, and identifies them for removal from the &#8220;int&#8221; top-level domain. Any implementation that involves these domains should be considered deprecated. " />
+
+</head>
+
+<body>
+
+  <table class="header">
+    <tbody>
+    
+    	<tr>
+<td class="left">Network Working Group</td>
+<td class="right">K. Davies</td>
+</tr>
+<tr>
+<td class="left">Internet-Draft</td>
+<td class="right">A. Baber</td>
+</tr>
+<tr>
+<td class="left">Updates: RFC1591 (if approved)</td>
+<td class="right">IANA</td>
+</tr>
+<tr>
+<td class="left">Intended status: Informational</td>
+<td class="right">March 25, 2021</td>
+</tr>
+<tr>
+<td class="left">Expires: September 26, 2021</td>
+<td class="right"></td>
+</tr>
+
+    	
+    </tbody>
+  </table>
+
+  <p class="title">Deprecating infrastructure "int" domains<br />
+  <span class="filename">draft-iana-int-historic-00</span></p>
+  
+  <h1 id="rfc.abstract"><a href="#rfc.abstract">Abstract</a></h1>
+<p>The document marks as historic any &#8220;int&#8221; domain names that were designated for infrastructure purposes, and identifies them for removal from the &#8220;int&#8221; top-level domain. Any implementation that involves these domains should be considered deprecated.</p>
+<h1 id="rfc.status"><a href="#rfc.status">Status of This Memo</a></h1>
+<p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
+<p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
+<p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
+<p>This Internet-Draft will expire on September 26, 2021.</p>
+<h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
+<p>Copyright (c) 2021 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
+<p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
+<h1 id="rfc.section.1">
+<a href="#rfc.section.1">1.</a> <a href="#introduction" id="introduction">Introduction</a>
+</h1>
+<p id="rfc.section.1.p.1">The &#8220;int&#8221; top-level domain <a href="#RFC1591" class="xref">[RFC1591]</a> is a specialized domain designated for intergovernmental organizations, which are organizations established by international treaties between or among national governments.</p>
+<p id="rfc.section.1.p.2">Historically, the &#8220;int&#8221; domain was also used for Internet infrastructure related purposes. This practice ended in 2001 when the &#8220;arpa&#8221; domain was declared the appropriate home for infrastructural identifier spaces <a href="#RFC3172" class="xref">[RFC3172]</a>. In conjunction with this change, the eligibility for &#8220;int&#8221; domains was limited to only intergovernmental treaty organizations.</p>
+<p id="rfc.section.1.p.3">The documented uses of infrastructural identifiers in the &#8220;int&#8221; domain were largely experimental and in practice obsolete. This document formalizes moving the related specifications to historic status, along with removing any associated delegations from the &#8220;int&#8221; zone in the domain name system.</p>
+<h1 id="rfc.section.2">
+<a href="#rfc.section.2">2.</a> <a href="#historical-infrastructural-uses" id="historical-infrastructural-uses">Historical infrastructural uses</a>
+</h1>
+<p id="rfc.section.2.p.1">The following domains were used for infrastructural identifier purposes that are now considered historic. Although each of these names was either delegated or documented at one time, the parties administering them have long since stopped using them.</p>
+<h1 id="rfc.section.2.1">
+<a href="#rfc.section.2.1">2.1.</a> <a href="#atmaint" id="atmaint">atma.int</a>
+</h1>
+<p id="rfc.section.2.1.p.1">The atma.int domain was experimentally defined to implement address lookups for Asynchronous Transfer Mode (ATM), including ATM End System Addresses (AESAs). <a href="#ANS" class="xref">[ANS]</a></p>
+<h1 id="rfc.section.2.2">
+<a href="#rfc.section.2.2">2.2.</a> <a href="#ip4int" id="ip4int">ip4.int</a>
+</h1>
+<p id="rfc.section.2.2.p.1">The ip4.int domain was described as providing an alternative to in-addr.arpa domain for mapping host IPv4 addresses to host names. The in-addr.arpa domain zone continues to be administered for this purpose <a href="#RFC1035" class="xref">[RFC1035]</a>.</p>
+<p id="rfc.section.2.2.p.2">The ip6.int domain was similarly delegated, and subsequently removed from the &#8220;int&#8221; zone, having been replaced by ip6.arpa for the purpose of mapping host IPv6 addresses to host names <a href="#RFC4159" class="xref">[RFC4159]</a>.</p>
+<h1 id="rfc.section.2.3">
+<a href="#rfc.section.2.3">2.3.</a> <a href="#nsapint" id="nsapint">nsap.int</a>
+</h1>
+<p id="rfc.section.2.3.p.1">The nsap.int domain name was specified to experimentally map Open Systems Interconnection (OSI) Network Service Access Points to domain names <a href="#RFC1706" class="xref">[RFC1706]</a>.</p>
+<h1 id="rfc.section.2.4">
+<a href="#rfc.section.2.4">2.4.</a> <a href="#rdiint" id="rdiint">rdi.int</a>
+</h1>
+<p id="rfc.section.2.4.p.1">The rdi.int domain name experimentally mapped OSI Inter-Domain Routing Protocol&#8217;s Routing Domain Identifiers <a href="#ISO10747" class="xref">[ISO10747]</a> to the domain name system.</p>
+<h1 id="rfc.section.2.5">
+<a href="#rfc.section.2.5">2.5.</a> <a href="#regint" id="regint">reg.int</a>
+</h1>
+<p id="rfc.section.2.5.p.1">The reg.int domain name hosted an experimental mechanism for publishing IANA registration values in the domain name system.</p>
+<h1 id="rfc.section.2.6">
+<a href="#rfc.section.2.6">2.6.</a> <a href="#tpcint" id="tpcint">tpc.int</a>
+</h1>
+<p id="rfc.section.2.6.p.1">The tpc.int domain name hosted an experimental remote printing service that served as a gateway between Internet mail and facsimile transmission as described in <a href="#RFC1528" class="xref">[RFC1528]</a>.</p>
+<h1 id="rfc.section.3">
+<a href="#rfc.section.3">3.</a> <a href="#iana-considerations" id="iana-considerations">IANA Considerations</a>
+</h1>
+<p id="rfc.section.3.p.1">The IANA shall coordinate the removal of the following &#8220;int&#8221; domains:</p>
+<p></p>
+
+<ul>
+<li>atma.int</li>
+<li>ip4.int</li>
+<li>nsap.int</li>
+<li>rdi.int</li>
+<li>reg.int</li>
+<li>tpc.int</li>
+</ul>
+<h1 id="rfc.section.4">
+<a href="#rfc.section.4">4.</a> <a href="#security-considerations" id="security-considerations">Security Considerations</a>
+</h1>
+<p id="rfc.section.4.p.1">Some old systems might have one or more subdomains of these names hardwired and expect a positive response for at least the second-level domain. This is, of course, true for any name in the DNS and should not be the sole basis to retain obsolete names.</p>
+<p id="rfc.section.4.p.2">Existing applications should eliminate any reliance upon these zones for their historic purpose. The operator of the &#8220;int&#8221; domain should be cautious about any potential re-use of these domains for intergovernmental treaty organizations.</p>
+<h1 id="rfc.references">
+<a href="#rfc.references">5.</a> Informative References</h1>
+<table><tbody>
+<tr>
+<td class="reference"><b id="ANS">[ANS]</b></td>
+<td class="top">"<a>ATM Name Service</a>", ATM Forum AF/95-1532R3, n.d..</td>
+</tr>
+<tr>
+<td class="reference"><b id="ISO10747">[ISO10747]</b></td>
+<td class="top">"<a href="https://www.iso.org/standard/21417.html">Protocol for exchange of inter-domain routeing information among intermediate systems to support forwarding of ISO 8473 PDUs</a>", ISO/IEC 10747:1994, October 1994.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC1035">[RFC1035]</b></td>
+<td class="top">
+<a>Mockapetris, P.</a>, "<a href="https://tools.ietf.org/html/rfc1035">Domain names - implementation and specification</a>", STD 13, RFC 1035, DOI 10.17487/RFC1035, November 1987.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC1528">[RFC1528]</b></td>
+<td class="top">
+<a>Malamud, C.</a> and <a>M. Rose</a>, "<a href="https://tools.ietf.org/html/rfc1528">Principles of Operation for the TPC.INT Subdomain: Remote Printing -- Technical Procedures</a>", RFC 1528, DOI 10.17487/RFC1528, October 1993.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC1591">[RFC1591]</b></td>
+<td class="top">
+<a>Postel, J.</a>, "<a href="https://tools.ietf.org/html/rfc1591">Domain Name System Structure and Delegation</a>", RFC 1591, DOI 10.17487/RFC1591, March 1994.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC1706">[RFC1706]</b></td>
+<td class="top">
+<a>Manning, B.</a> and <a>R. Colella</a>, "<a href="https://tools.ietf.org/html/rfc1706">DNS NSAP Resource Records</a>", RFC 1706, DOI 10.17487/RFC1706, October 1994.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC3172">[RFC3172]</b></td>
+<td class="top">
+<a>Huston, G.</a>, "<a href="https://tools.ietf.org/html/rfc3172">Management Guidelines &amp; Operational Requirements for the Address and Routing Parameter Area Domain ("arpa")</a>", BCP 52, RFC 3172, DOI 10.17487/RFC3172, September 2001.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC4159">[RFC4159]</b></td>
+<td class="top">
+<a>Huston, G.</a>, "<a href="https://tools.ietf.org/html/rfc4159">Deprecation of "ip6.int"</a>", BCP 109, RFC 4159, DOI 10.17487/RFC4159, August 2005.</td>
+</tr>
+</tbody></table>
+<h1 id="rfc.notes_for_removal_before_publication_"><a href="#rfc.notes_for_removal_before_publication_">Notes (for removal before publication)</a></h1>
+<p id="rfc.section.A.p.1">This document is the result of an comprehensive inventory conducted by the IANA team of .int domains to accurately establish and record their purpose based on historical documentation. Following this review, the remaining domains delegated for infrastructure identifier related purposes were brought to the IETF leadership for a preliminary discussion on how they should be treated. It was assessed that these domains are highly likely to be obsolete and this document is intended to formalize that assessment.</p>
+<p id="rfc.section.A.p.2">There are a small number of existing &#8220;int&#8221; domains nominally for &#8220;international databases&#8221; that are not defined by any standards documentation, and are assigned to entities rather than for an identifier purpose. While they would not qualify for a &#8220;int&#8221; domain under current criteria, their disposition is beyond the scope of this memo.</p>
+<h1 id="rfc.acknowledgments"><a href="#rfc.acknowledgments">Acknowledgments</a></h1>
+<p id="rfc.section.B.p.1">This document was compiled with help from Ted Hardie and Michelle Cotton.</p>
+<h1 id="rfc.authors"><a href="#rfc.authors">Authors' Addresses</a></h1>
+<div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Kim Davies</span> 
+	  <span class="n hidden">
+		<span class="family-name">Davies</span>
+	  </span>
+	</span>
+	<span class="org vcardline">Internet Assigned Numbers Authority</span>
+	<span class="adr">
+	  <span class="vcardline">PTI/ICANN</span>
+<span class="vcardline">12025 Waterfront Drive</span>
+
+	  <span class="vcardline">
+		<span class="locality">Los Angeles</span>,  
+		<span class="region"></span>
+		<span class="code">90094</span>
+	  </span>
+	  <span class="country-name vcardline">United States of America</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:kim.davies@iana.org">kim.davies@iana.org</a></span>
+
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Amanda Baber</span> 
+	  <span class="n hidden">
+		<span class="family-name">Baber</span>
+	  </span>
+	</span>
+	<span class="org vcardline">Internet Assigned Numbers Authority</span>
+	<span class="adr">
+	  <span class="vcardline">PTI/ICANN</span>
+<span class="vcardline">12025 Waterfront Drive</span>
+
+	  <span class="vcardline">
+		<span class="locality">Los Angeles</span>,  
+		<span class="region"></span>
+		<span class="code">90094</span>
+	  </span>
+	  <span class="country-name vcardline">United States of America</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:amanda.baber@iana.org">amanda.baber@iana.org</a></span>
+
+  </address>
+</div>
+  
+  <hr class="noprint" />
+  <h1 class="np" id="rfc.toc"><a href="#rfc.toc">Table of Contents</a></h1>
+  <ul class="toc">
+
+  	<li>1.   <a href="#rfc.section.1">Introduction</a>
+</li>
+<li>2.   <a href="#rfc.section.2">Historical infrastructural uses</a>
+</li>
+<ul><li>2.1.   <a href="#rfc.section.2.1">atma.int</a>
+</li>
+<li>2.2.   <a href="#rfc.section.2.2">ip4.int</a>
+</li>
+<li>2.3.   <a href="#rfc.section.2.3">nsap.int</a>
+</li>
+<li>2.4.   <a href="#rfc.section.2.4">rdi.int</a>
+</li>
+<li>2.5.   <a href="#rfc.section.2.5">reg.int</a>
+</li>
+<li>2.6.   <a href="#rfc.section.2.6">tpc.int</a>
+</li>
+</ul><li>3.   <a href="#rfc.section.3">IANA Considerations</a>
+</li>
+<li>4.   <a href="#rfc.section.4">Security Considerations</a>
+</li>
+<li>5.   <a href="#rfc.references">Informative References</a>
+</li>
+<li><a href="#rfc.notes_for_removal_before_publication_">Notes (for removal before publication)</a>
+</li>
+<li><a href="#rfc.acknowledgments">Acknowledgments</a>
+</li>
+<li><a href="#rfc.authors">Authors' Addresses</a>
+</li>
+
+
+  </ul>
+
+  
+
+</body>
+</html>
