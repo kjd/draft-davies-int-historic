@@ -135,7 +135,7 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
    The tpc.int domain name hosted an experimental remote printing
    service that served as a gateway between Internet mail and facsimile
-   transmission as described in [RFC1528].
+   transmission [RFC1528].
 
 3.  IANA Considerations
 

@@ -133,7 +133,7 @@ IANA registration values in the domain name system.</t>
 
 <t>The tpc.int domain name hosted an experimental remote printing
 service that served as a gateway between Internet mail and facsimile
-transmission as described in <xref target="RFC1528"/>.</t>
+transmission <xref target="RFC1528"/>.</t>
 
 </section>
 </section>
@@ -316,7 +316,7 @@ Cotton.</t>
   </back>
 
 <!-- ##markdown-source:
-H4sIAPftXGAAA91YXW/bOBZ9568g0odtgciJ06RpDCyw3qbFGDNNiyaDeRzQ
+H4sIAO/uXGAAA91YXW/bOBZ9568g0odtgciJ06RpDCyw3qbFGDNNiyaDeRzQ
 Em1xIokakrLrBvnve+4lJctJu+jzBAigD4q8H+eee66zLBPBhErP5LVunc5V
 MM1ammbllA+uy0PntDwyTTiSha2VabxQy6XTm5lcHC6aYFG/RorC5o2qsW3h
 1CpkhdoY7TMsyUrjg3Umz05PhfBBNcWfqrINlmIrLYRpHV/6cHZ6enV6Ju63
@@ -354,24 +354,24 @@ jbhNQoo7BqLb6EjALz/dLl7JGzQo6+57ySLnOYjby88W57GZifZGhpI27A2F
 GtvbmW4OzHxuFVUUjo72ZNdx7ReoQqrDXkP+y/ePZFqxGPHyw0OvQNHoYWNg
 ah8OFXsqg4V6PbIw3hxYSHkg2DeHbF5r6kvGRynUdtzryUSaAGgjQzKNIwmN
 RHhN3eL7nPpChjbfG5JufsYQwiXaLrpvwyHyKVPMnXQTa1ZJAvZW7QbNMUgE
-Gg4Y7yuVcy1oEYhbaoOZh9T3uPz3MursLbVtFmDk8rtEz0n/sBv8wpdILerW
-kjQnhRDbGWvHxNijZnEwoM8g9fZ0mg0sle0rIBswlg25zPbBfAHk5h2Nac8M
-vCWhYiE0+1GiNusyRJYnpiHSsug9YIG+gx32F1FiXtgax0kpOCs5eFuiwA3T
-IYq5xVFRDiEblUbDY3+9RqUVUZ2KXiazDDBo4DgGc53z1JJclz5HA2cYJBhd
-39xGjopiubFBLGNoSVXIpfKG69PpQAjqxUbiWCHefwVAmcLbthrkRNpNk4ri
-XNGxkB4YFgGprmXlTlqdaM/3rGbcXoQkgmMWl7alcGNRSvOBUhrJfIVSppam
-lihqPrMFpoFnxnfWMWGm0Pe5wNniJ8WdjBPDUuX3hIgbSyPyy9EIAyNWlmee
-ZR+LV+Jh1vCor4t/H62grvXRI6F6JNVoiIhg9l0VyERFIrbGpALh7AkCGHGw
-0LodNS6aUdBB0BdCXxxBq5o+PPjJCWlTOVCLBJCI7CcJzjeGIBSSiFHvuwmy
-TcqmGdKgqsFI9maCebKvMGqQmAM2Rm+P+1rEsWOltldL3xkM90Lt2TQRJd7S
-kSILPfMu3t99IOij9MCQbUQz+CqBzO1EYXzeRa4hH6D18N1uNAdyVjH5yUWI
-sw41Sc/DhwpPpkeSiyUqGZGrzD0FMAqFoQIoiuFpGglJNPoILB4EeNw+HkYL
-o4TA/nQGpseaiC2ChHKo+5I64DCUJrlJ3Y0ge3Q4CRYKyUX2/JEcid0wSEJg
-hcqh/3XCi4O0RpnC1vQ/T1GnR3pYwwJApH2xcZM4RDxX2RP5RwnKjyHf9mQi
-/+4QgtUuZeugcDsEykng01Hw0BdIJKvjxARIZiRApNLQhLuzTZwSfQ4+iIUM
-BNYoPQR0kV2DsToHesFq2p/4ipX5/oeaNUR8t5ygtE7u/ypOfvhDLFX3PL/H
-tFDpYs3D88+UMUGKyhZhKOLgWeqqjYPRHR79Qr8qReB8xLSvK3TIdzYE1JUQ
-/wO1nrbEeBYAAA==
+Gg4Y7yuVcy1oEYhbaoOZxw6y6ewttWkWXOTiu0THSe+w2fzCl0gl6tSSFCdF
+ENsXa8XE0KPmcDCQzyDt9vSZDayU7RGfDZjKhtxl++C9AFLzjsayZwbekjCx
+EJb96FCbdRkiqxOzEElZ9BpUfd+xDvuJKDEfbI3jJBSchRw8LVHQhukPxdvi
+qCh/EP1Ko8Gxv16jsoqoRkUvi7ntGzRsHIM5znlqQa5Ln6Nhc9oTbK5vbiMn
+RXHc2CCWMbSkIuRSecP16HQgxPTiInGqEO+/ApBM2W1bDfIh7aZJNXGu6FhI
+DQyHgFDXslInbU4053sWM24vOhKhMWtL21K4sSil+UAZjWS9QulSC1NLFDGf
+2QLDwC/jOeuYIFPo+1zgbPGTYk7GCWGp8ntCxI2lkfjlaGSBESvLM86yj8Ur
+8TBreLTXxb+PVlDT+uiRUD2SZjQ0RDD7rgpkoiLRWmMygVD2BAGMNFho3Y4a
+Fc0k6BjoA6EvjqBVTR8e/MSEtKkcqEUCSDT2kwPnG0MPCknEqPfdA9kmJdMM
+aVDVYCR7M8H82FcYNUTo/o3R2+O+FnHsWJnt1dF3BsG9MHs2PURJt3SkwELP
+tIv3dx8I+ig9MGIb0Qx+SiBzO1EYn3eRW8gHaDt8txvNfZxVTHpyEeJsQ03R
+87ChwpNpkeRhiUpG5CpzTwGMwmCoAIpieJpGQhKNOgKLB8Edt4+H0cIoGbA/
+nYFpsSZiiyChHOq+pA44DKVJblI3I8geHU5+hUJykT1/JEfiNgwSEFihcuh/
+jfDiIK1RlrA1/c9R1NmRHtasABBpXWzcJA4Rz1X1RP5RguJjyLc9mci/O4Rg
+tUvZOijcDoFyEvh0FDzIQBLF6jgxAZIZCRCpNDTR7mwTp0Kfgw9iIQOBNUoP
+AV1k12CszoFesJr2J75iJb7/YWYN0d4tJyitk/u/ipMf/vBK1T3P7zEdVLpY
+87D8M2VMkKKyRRiKOGiWumrjIHSHR7/Qr0gROB8x3esKHfGdDQF1JcT/AKyN
+KSVoFgAA
 
 -->
 
