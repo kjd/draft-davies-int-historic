@@ -236,6 +236,9 @@ Internet-Draft         Infrastructure .int domains            March 2021
    under current criteria, their disposition is beyond the scope of this
    memo.
 
+   I-D source is maintained at: https://github.com/kjd/draft-davies-int-
+   historic
+
 Acknowledgments
 
    This document was compiled with help from Ted Hardie and Michelle
@@ -261,9 +264,6 @@ Authors' Addresses
    United States of America
 
    Email: amanda.baber@iana.org
-
-
-
 
 
 

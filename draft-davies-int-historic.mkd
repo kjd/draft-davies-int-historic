@@ -176,6 +176,8 @@ identifier purpose. While they would not qualify for a "int" domain
 under current criteria, their disposition is beyond the scope of this
 memo.
 
+I-D source is maintained at: https://github.com/kjd/draft-davies-int-historic
+
 # Acknowledgments
 {:numbered="false"}
 
