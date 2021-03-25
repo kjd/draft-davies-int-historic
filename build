@@ -2,5 +2,5 @@
 
 kramdown-rfc2629 draft-davies-int-historic.mkd > draft-davies-int-historic.xml
 xml2rfc draft-davies-int-historic.xml
-xml2rfc --html draft-davies-int-historic.xml
+xml2rfc --html --v3 draft-davies-int-historic.xml
 
