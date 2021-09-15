@@ -5,19 +5,21 @@
 Network Working Group                                          K. Davies
 Internet-Draft                                                  A. Baber
 Updates: RFC1591 (if approved)                                      IANA
-Intended status: Informational                            March 25, 2021
-Expires: September 26, 2021
+Intended status: Informational                        September 15, 2021
+Expires: March 19, 2022
 
 
                 Deprecating infrastructure "int" domains
-                      draft-davies-int-historic-00
+                      draft-davies-int-historic-01
 
 Abstract
 
    The document marks as historic any "int" domain names that were
    designated for infrastructure purposes, and identifies them for
    removal from the "int" top-level domain.  Any implementation that
-   involves these domains should be considered deprecated.
+   involves these domains should be considered deprecated.  This
+   document also updates [RFC1591] by removing the documented use of
+   "int" for international databases.
 
 Status of This Memo
 
@@ -34,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on September 26, 2021.
+   This Internet-Draft will expire on March 19, 2022.
 
 Copyright Notice
 
@@ -48,15 +50,16 @@ Copyright Notice
    carefully, as they describe your rights and restrictions with respect
    to this document.  Code Components extracted from this document must
    include Simplified BSD License text as described in Section 4.e of
+
+
+
+Davies & Baber           Expires March 19, 2022                 [Page 1]
+
+Internet-Draft         Infrastructure .int domains        September 2021
+
+
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
-
-
-
-Davies & Baber         Expires September 26, 2021               [Page 1]
-
-Internet-Draft         Infrastructure .int domains            March 2021
-
 
 1.  Introduction
 
@@ -106,12 +109,9 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
 
 
-
-
-
-Davies & Baber         Expires September 26, 2021               [Page 2]
+Davies & Baber           Expires March 19, 2022                 [Page 2]
 
-Internet-Draft         Infrastructure .int domains            March 2021
+Internet-Draft         Infrastructure .int domains        September 2021
 
 
 2.3.  nsap.int
@@ -139,19 +139,9 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
 3.  IANA Considerations
 
-   The IANA shall coordinate the removal of the following "int" domains:
-
-   o  atma.int
-
-   o  ip4.int
-
-   o  nsap.int
-
-   o  rdi.int
-
-   o  reg.int
-
-   o  tpc.int
+   The IANA shall coordinate the removal of any of the historical "int"
+   domains discussed in this document that are still delegated in the
+   "int" zone.
 
 4.  Security Considerations
 
@@ -162,18 +152,36 @@ Internet-Draft         Infrastructure .int domains            March 2021
 
    Existing applications should eliminate any reliance upon these zones
    for their historic purpose.  The operator of the "int" domain should
-
-
-
-Davies & Baber         Expires September 26, 2021               [Page 3]
-
-Internet-Draft         Infrastructure .int domains            March 2021
-
-
    be cautious about any potential re-use of these domains for
    intergovernmental treaty organizations.
 
-5.  Informative References
+5.  Additional Information
+
+   This document is the result of an comprehensive inventory conducted
+   by the IANA team of .int domains to accurately establish and record
+   their purpose based on historical documentation.  Following this
+   review, the remaining domains delegated for infrastructure identifier
+   related purposes were reviewed.  As part of this review, query
+
+
+
+Davies & Baber           Expires March 19, 2022                 [Page 3]
+
+Internet-Draft         Infrastructure .int domains        September 2021
+
+
+   patterns in the DNS were analyzed and judged to be insignificant.
+   The assessment concluded that these domains are highly likely to be
+   obsolete and this document is intended to formalize that assessment.
+
+   There are a small number of existing "int" domains nominally for
+   "international databases" that are not defined by any standards
+   documentation, and are assigned to entities rather than for an
+   identifier purpose.  While they would not qualify for a "int" domain
+   under current criteria, their disposition is beyond the scope of this
+   memo.
+
+6.  Informative References
 
    [ANS]      "ATM Name Service", ATM Forum AF/95-1532R3, n.d..
 
@@ -209,32 +217,16 @@ Internet-Draft         Infrastructure .int domains            March 2021
               DOI 10.17487/RFC4159, August 2005,
               <https://www.rfc-editor.org/info/rfc4159>.
 
-Notes (for removal before publication)
-
-   This document is the result of an comprehensive inventory conducted
-   by the IANA team of .int domains to accurately establish and record
-   their purpose based on historical documentation.  Following this
-   review, the remaining domains delegated for infrastructure identifier
-   related purposes were brought to the IETF leadership for a
-   preliminary discussion on how they should be treated.  It was
 
 
 
 
-Davies & Baber         Expires September 26, 2021               [Page 4]
+Davies & Baber           Expires March 19, 2022                 [Page 4]
 
-Internet-Draft         Infrastructure .int domains            March 2021
+Internet-Draft         Infrastructure .int domains        September 2021
 
 
-   assessed that these domains are highly likely to be obsolete and this
-   document is intended to formalize that assessment.
-
-   There are a small number of existing "int" domains nominally for
-   "international databases" that are not defined by any standards
-   documentation, and are assigned to entities rather than for an
-   identifier purpose.  While they would not qualify for a "int" domain
-   under current criteria, their disposition is beyond the scope of this
-   memo.
+Notes (for removal before publication)
 
    I-D source is maintained at: https://github.com/kjd/draft-davies-int-
    historic
@@ -242,7 +234,7 @@ Internet-Draft         Infrastructure .int domains            March 2021
 Acknowledgments
 
    This document was compiled with help from Ted Hardie and Michelle
-   Cotton.
+   Cotton, with additional input by Jari Arkko and Warren Kumari.
 
 Authors' Addresses
 
@@ -277,4 +269,12 @@ Authors' Addresses
 
 
 
-Davies & Baber         Expires September 26, 2021               [Page 5]
+
+
+
+
+
+
+
+
+Davies & Baber           Expires March 19, 2022                 [Page 5]

@@ -1,7 +1,7 @@
 ---
 title: Deprecating infrastructure "int" domains
 abbrev: Infrastructure .int domains 
-docname: draft-davies-int-historic-00
+docname: draft-davies-int-historic-01
 
 stand_alone: true
 
@@ -62,7 +62,9 @@ informative:
 The document marks as historic any "int" domain names that were
 designated for infrastructure purposes, and identifies them for removal
 from the "int" top-level domain. Any implementation that involves these
-domains should be considered deprecated.
+domains should be considered deprecated. This document also updates
+{{RFC1591}} by removing the documented use of "int" for international
+databases.
 
 --- middle
 
@@ -134,14 +136,9 @@ transmission {{RFC1528}}.
 
 # IANA Considerations
 
-The IANA shall coordinate the removal of the following "int" domains:
-
-- atma.int
-- ip4.int
-- nsap.int
-- rdi.int
-- reg.int
-- tpc.int
+The IANA shall coordinate the removal of any of the historical "int" 
+domains discussed in this document that are still delegated in the
+"int" zone.
 
 # Security Considerations
 
@@ -155,19 +152,16 @@ zones for their historic purpose. The operator of the "int" domain
 should be cautious about any potential re-use of these domains for
 intergovernmental treaty organizations. 
 
---- back
-
-# Notes (for removal before publication)
-{:numbered="false"}
+# Additional Information
 
 This document is the result of an comprehensive inventory conducted
 by the IANA team of .int domains to accurately establish and record
 their purpose based on historical documentation. Following this
 review, the remaining domains delegated for infrastructure identifier
-related purposes were brought to the IETF leadership for a preliminary
-discussion on how they should be treated. It was assessed that these
-domains are highly likely to be obsolete and this document is intended
-to formalize that assessment.
+related purposes were reviewed. As part of this review, query patterns
+in the DNS were analyzed and judged to be insignificant. The
+assessment concluded that these domains are highly likely to be
+obsolete and this document is intended to formalize that assessment.
 
 There are a small number of existing "int" domains nominally for
 "international databases" that are not defined by any standards
@@ -176,11 +170,16 @@ identifier purpose. While they would not qualify for a "int" domain
 under current criteria, their disposition is beyond the scope of this
 memo.
 
+--- back
+
+# Notes (for removal before publication)
+{:numbered="false"}
+
 I-D source is maintained at: https://github.com/kjd/draft-davies-int-historic
 
 # Acknowledgments
 {:numbered="false"}
 
 This document was compiled with help from Ted Hardie and Michelle
-Cotton.
+Cotton, with additional input by Jari Arkko and Warren Kumari.
 
