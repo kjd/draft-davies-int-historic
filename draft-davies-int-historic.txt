@@ -101,11 +101,11 @@ Internet-Draft         Infrastructure .int domains          October 2021
    in-addr.arpa domain zone continues to be administered for this
    purpose [RFC1035].
 
-   The ip6.int domain was similarly delegated, and subsequently removed
-   from the "int" zone, having been replaced by ip6.arpa for the purpose
-   of mapping host IPv6 addresses to host names [RFC4159].
+2.3.  ip6.int
 
-
+   The ip6.int domain was originally delegated for mapping host IPv6
+   addresses to host names.  It was subsequently removed from the "int"
+   zone, having been replaced by ip6.arpa for this purpose [RFC4159].
 
 
 
@@ -114,24 +114,24 @@ Davies & Baber           Expires April 17, 2022                 [Page 2]
 Internet-Draft         Infrastructure .int domains          October 2021
 
 
-2.3.  nsap.int
+2.4.  nsap.int
 
    The nsap.int domain name was specified to experimentally map Open
    Systems Interconnection (OSI) Network Service Access Points to domain
    names [RFC1706].
 
-2.4.  rdi.int
+2.5.  rdi.int
 
    The rdi.int domain name experimentally mapped OSI Inter-Domain
    Routing Protocol's Routing Domain Identifiers [ISO10747] to the
    domain name system.
 
-2.5.  reg.int
+2.6.  reg.int
 
    The reg.int domain name hosted an experimental mechanism for
    publishing IANA registration values in the domain name system.
 
-2.6.  tpc.int
+2.7.  tpc.int
 
    The tpc.int domain name hosted an experimental remote printing
    service that served as a gateway between Internet mail and facsimile

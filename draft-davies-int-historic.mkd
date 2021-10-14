@@ -107,9 +107,11 @@ in-addr.arpa domain for mapping host IPv4 addresses to host names. The
 in-addr.arpa domain zone continues to be administered for this purpose
 {{RFC1035}}.
 
-The ip6.int domain was similarly delegated, and subsequently removed
-from the "int" zone, having been replaced by ip6.arpa for the purpose of
-mapping host IPv6 addresses to host names {{RFC4159}}.
+## ip6.int
+
+The ip6.int domain was originally delegated for mapping host IPv6 addresses
+to host names. It was subsequently removed from the "int" zone, having
+been replaced by ip6.arpa for this purpose {{RFC4159}}.
 
 ## nsap.int
 
