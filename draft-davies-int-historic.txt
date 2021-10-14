@@ -4,9 +4,9 @@
 
 Network Working Group                                          K. Davies
 Internet-Draft                                                  A. Baber
-Updates: RFC1591 (if approved)                                      IANA
-Intended status: Informational                        September 15, 2021
-Expires: March 19, 2022
+Updates: 1591 (if approved)                                         IANA
+Intended status: Informational                          October 14, 2021
+Expires: April 17, 2022
 
 
                 Deprecating infrastructure "int" domains
@@ -18,7 +18,7 @@ Abstract
    designated for infrastructure purposes, and identifies them for
    removal from the "int" top-level domain.  Any implementation that
    involves these domains should be considered deprecated.  This
-   document also updates [RFC1591] by removing the documented use of
+   document also updates RFC 1591 by removing the documented use of
    "int" for international databases.
 
 Status of This Memo
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on March 19, 2022.
+   This Internet-Draft will expire on April 17, 2022.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Davies & Baber           Expires March 19, 2022                 [Page 1]
+Davies & Baber           Expires April 17, 2022                 [Page 1]
 
-Internet-Draft         Infrastructure .int domains        September 2021
+Internet-Draft         Infrastructure .int domains          October 2021
 
 
    the Trust Legal Provisions and are provided without warranty as
@@ -109,9 +109,9 @@ Internet-Draft         Infrastructure .int domains        September 2021
 
 
 
-Davies & Baber           Expires March 19, 2022                 [Page 2]
+Davies & Baber           Expires April 17, 2022                 [Page 2]
 
-Internet-Draft         Infrastructure .int domains        September 2021
+Internet-Draft         Infrastructure .int domains          October 2021
 
 
 2.3.  nsap.int
@@ -165,9 +165,9 @@ Internet-Draft         Infrastructure .int domains        September 2021
 
 
 
-Davies & Baber           Expires March 19, 2022                 [Page 3]
+Davies & Baber           Expires April 17, 2022                 [Page 3]
 
-Internet-Draft         Infrastructure .int domains        September 2021
+Internet-Draft         Infrastructure .int domains          October 2021
 
 
    patterns in the DNS were analyzed and judged to be insignificant.
@@ -221,9 +221,9 @@ Internet-Draft         Infrastructure .int domains        September 2021
 
 
 
-Davies & Baber           Expires March 19, 2022                 [Page 4]
+Davies & Baber           Expires April 17, 2022                 [Page 4]
 
-Internet-Draft         Infrastructure .int domains        September 2021
+Internet-Draft         Infrastructure .int domains          October 2021
 
 
 Notes (for removal before publication)
@@ -277,4 +277,4 @@ Authors' Addresses
 
 
 
-Davies & Baber           Expires March 19, 2022                 [Page 5]
+Davies & Baber           Expires April 17, 2022                 [Page 5]

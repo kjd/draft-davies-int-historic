@@ -8,7 +8,7 @@ stand_alone: true
 ipr: trust200902
 kw: Internet-Draft
 cat: info 
-updates: RFC1591
+updates: 1591
 pi:
   toc: no 
   sortrefs: yes
@@ -63,7 +63,7 @@ The document marks as historic any "int" domain names that were
 designated for infrastructure purposes, and identifies them for removal
 from the "int" top-level domain. Any implementation that involves these
 domains should be considered deprecated. This document also updates
-{{RFC1591}} by removing the documented use of "int" for international
+RFC 1591 by removing the documented use of "int" for international
 databases.
 
 --- middle
