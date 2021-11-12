@@ -1,7 +1,7 @@
 ---
 title: Deprecating infrastructure "int" domains
 abbrev: Infrastructure .int domains 
-docname: draft-davies-int-historic-02
+docname: draft-davies-int-historic-03
 
 stand_alone: true
 
@@ -54,9 +54,11 @@ informative:
     seriesinfo:
       ISO/IEC: 10747:1994
   ANS:
-    title: "ATM Name Service"
+    title: "ATM Name Service Specification Version 1.0"
+    target: https://www.broadband-forum.org/technical/download/af-saa-0069.000.pdf
+    date: 1996-11
     seriesinfo:
-      "ATM Forum": AF/95-1532R3
+      "ATM Forum": AF-SAA-0069.000
 --- abstract
 
 The document marks as historic any "int" domain names that were

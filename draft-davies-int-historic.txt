@@ -5,12 +5,12 @@
 Network Working Group                                          K. Davies
 Internet-Draft                                                  A. Baber
 Updates: 1591 (if approved)                                         IANA
-Intended status: Informational                          October 14, 2021
-Expires: April 17, 2022
+Intended status: Informational                         November 12, 2021
+Expires: May 16, 2022
 
 
                 Deprecating infrastructure "int" domains
-                      draft-davies-int-historic-02
+                      draft-davies-int-historic-03
 
 Abstract
 
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on April 17, 2022.
+   This Internet-Draft will expire on May 16, 2022.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Davies & Baber           Expires April 17, 2022                 [Page 1]
+Davies & Baber            Expires May 16, 2022                  [Page 1]
 
-Internet-Draft         Infrastructure .int domains          October 2021
+Internet-Draft         Infrastructure .int domains         November 2021
 
 
    the Trust Legal Provisions and are provided without warranty as
@@ -109,9 +109,9 @@ Internet-Draft         Infrastructure .int domains          October 2021
 
 
 
-Davies & Baber           Expires April 17, 2022                 [Page 2]
+Davies & Baber            Expires May 16, 2022                  [Page 2]
 
-Internet-Draft         Infrastructure .int domains          October 2021
+Internet-Draft         Infrastructure .int domains         November 2021
 
 
 2.4.  nsap.int
@@ -165,9 +165,9 @@ Internet-Draft         Infrastructure .int domains          October 2021
 
 
 
-Davies & Baber           Expires April 17, 2022                 [Page 3]
+Davies & Baber            Expires May 16, 2022                  [Page 3]
 
-Internet-Draft         Infrastructure .int domains          October 2021
+Internet-Draft         Infrastructure .int domains         November 2021
 
 
    patterns in the DNS were analyzed and judged to be insignificant.
@@ -183,7 +183,9 @@ Internet-Draft         Infrastructure .int domains          October 2021
 
 6.  Informative References
 
-   [ANS]      "ATM Name Service", ATM Forum AF/95-1532R3, n.d..
+   [ANS]      "ATM Name Service Specification Version 1.0", ATM Forum
+              AF-SAA-0069.000, November 1996, <https://www.broadband-
+              forum.org/technical/download/af-saa-0069.000.pdf>.
 
    [ISO10747]
               "Protocol for exchange of inter-domain routeing
@@ -219,11 +221,9 @@ Internet-Draft         Infrastructure .int domains          October 2021
 
 
 
-
-
-Davies & Baber           Expires April 17, 2022                 [Page 4]
+Davies & Baber            Expires May 16, 2022                  [Page 4]
 
-Internet-Draft         Infrastructure .int domains          October 2021
+Internet-Draft         Infrastructure .int domains         November 2021
 
 
 Notes (for removal before publication)
@@ -277,4 +277,4 @@ Authors' Addresses
 
 
 
-Davies & Baber           Expires April 17, 2022                 [Page 5]
+Davies & Baber            Expires May 16, 2022                  [Page 5]
