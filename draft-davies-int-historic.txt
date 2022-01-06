@@ -10,7 +10,7 @@ Expires: July 9, 2022
 
 
                 Deprecating infrastructure "int" domains
-                      draft-davies-int-historic-03
+                      draft-davies-int-historic-04
 
 Abstract
 
@@ -143,7 +143,7 @@ Internet-Draft         Infrastructure .int domains          January 2022
    service that served as a gateway between Internet mail and facsimile
    transmission [RFC1528].
 
-3.  Updates to other documents
+3.  Updates to other RFC Series documents
 
 3.1.  RFC 1528
 
@@ -192,12 +192,12 @@ Internet-Draft         Infrastructure .int domains          January 2022
 
    This document is the result of an comprehensive inventory conducted
    by the IANA team of .int domains to accurately establish and record
-   their purpose based on historical documentation.  Following this
-   review, the remaining domains delegated for infrastructure identifier
-   related purposes were reviewed.  As part of this review, query
-   patterns in the DNS were analyzed and judged to be insignificant.
-   The assessment concluded that these domains are highly likely to be
-   obsolete and this document is intended to formalize that assessment.
+   their purpose based on historical documentation.  As part of this
+   inventory, the domains delegated for infrastructure identifier
+   related purposes were studied.  Query patterns in the DNS for these
+   domains were analyzed and judged to be insignificant.  The assessment
+   concluded that these domains are highly likely to be obsolete and
+   this document is intended to formalize that assessment.
 
    There are a small number of existing "int" domains nominally for
    "international databases" that are not defined by any standards
