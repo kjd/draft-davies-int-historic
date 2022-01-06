@@ -10,7 +10,6 @@ kw: Internet-Draft
 cat: info 
 updates: 1528, 1591, 1706
 pi:
-  toc: no 
   sortrefs: yes
   symrefs: yes
 
