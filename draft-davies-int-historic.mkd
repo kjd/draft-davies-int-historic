@@ -8,7 +8,7 @@ stand_alone: true
 ipr: trust200902
 kw: Internet-Draft
 cat: info 
-updates: 1591
+updates: 1528, 1591, 1706
 pi:
   toc: no 
   sortrefs: yes
@@ -64,9 +64,9 @@ informative:
 The document marks as historic any "int" domain names that were
 designated for infrastructure purposes, and identifies them for removal
 from the "int" top-level domain. Any implementation that involves these
-domains should be considered deprecated. This document also updates
-RFC 1591 by removing the documented use of "int" for international
-databases.
+domains should be considered deprecated. This document also marks 
+RFC 1528 and RFC 1706 as historic, and updates RFC 1591 by removing
+the documented use of "int" for international databases.
 
 --- middle
 
@@ -137,6 +137,24 @@ IANA registration values in the domain name system.
 The tpc.int domain name hosted an experimental remote printing
 service that served as a gateway between Internet mail and facsimile
 transmission {{RFC1528}}. 
+
+# Updates to other documents
+
+## RFC 1528
+
+The specification for tpc.int {{RFC1528}} should be deemed historic
+as it no longer functions as described in the document.
+
+## RFC 1591
+
+The use of the "int" top-level domain for international databases should
+be deemed historic given the transfer of these functions to the "arpa"
+top-level domain {{RFC3172}}.
+
+## RFC 1706
+
+The specification for nsap.int {{RFC1706}} should be deemed historic
+as it no longer functions as described in the document.
 
 # IANA Considerations
 
