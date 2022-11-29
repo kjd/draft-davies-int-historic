@@ -8,7 +8,7 @@
 <?rfc sortrefs="yes"?>
 <?rfc symrefs="yes"?>
 
-<rfc ipr="trust200902" docName="draft-davies-int-historic-04" category="info" updates="1528, 1591, 1706">
+<rfc ipr="trust200902" docName="draft-davies-int-historic-05" category="info" updates="1528, 1706">
   <front>
     <title abbrev="Infrastructure .int domains">Deprecating infrastructure "int" domains</title>
 
@@ -37,7 +37,7 @@
       </address>
     </author>
 
-    <date year="2022" month="January" day="05"/>
+    <date year="2022" month="November" day="28"/>
 
     
     
@@ -46,12 +46,12 @@
     <abstract>
 
 
-<t>The document marks as historic any “int” domain names that were
-designated for infrastructure purposes, and identifies them for removal
-from the “int” top-level domain. Any implementation that involves these
-domains should be considered deprecated. This document also marks 
-RFC 1528 and RFC 1706 as historic, and updates RFC 1591 by removing
-the documented use of “int” for international databases.</t>
+<t>The document deprecates the use of any “int” domain names that were
+designated for infrastructure purposes by the IETF, and identifies
+them for removal from the “int” top-level domain.  Any implementation
+that involves these domains should be considered deprecated.  This
+document also requests moving the status of RFC 1528 and RFC 1706 to
+historic.</t>
 
 
 
@@ -78,8 +78,8 @@ declared the appropriate home for infrastructural identifier spaces
 domains was limited to only intergovernmental treaty organizations.</t>
 
 <t>The documented uses of infrastructural identifiers in the “int” domain
-were largely experimental and in practice obsolete. This document
-formalizes moving the related specifications to historic status, along
+were largely experimental and are now in practice obsolete. This document
+requests moving the related specifications to historic status, along
 with removing any associated delegations from the “int” zone in the
 domain name system.</t>
 
@@ -149,13 +149,6 @@ transmission <xref target="RFC1528"/>.</t>
 as it no longer functions as described in the document.</t>
 
 </section>
-<section anchor="rfc-1591" title="RFC 1591">
-
-<t>The use of the “int” top-level domain for international databases should
-be deemed historic given the transfer of these functions to the “arpa”
-top-level domain <xref target="RFC3172"/>.</t>
-
-</section>
 <section anchor="rfc-1706" title="RFC 1706">
 
 <t>The specification for nsap.int <xref target="RFC1706"/> should be deemed historic
@@ -185,14 +178,15 @@ intergovernmental treaty organizations.</t>
 </section>
 <section anchor="additional-information" title="Additional Information">
 
-<t>This document is the result of an comprehensive inventory conducted
-by the IANA team of .int domains to accurately establish and record
-their purpose based on historical documentation. As part of this
-inventory, the domains delegated for infrastructure identifier
-related purposes were studied. Query patterns in the DNS for these
-domains were analyzed and judged to be insignificant. The
-assessment concluded that these domains are highly likely to be
-obsolete and this document is intended to formalize that assessment.</t>
+<t>This document is the result of an comprehensive inventory conducted by
+the IANA team of .int domains to accurately establish and record their
+purpose based on historical documentation. As part of this inventory,
+the domains delegated for infrastructure identifier related purposes
+were studied. Query patterns in the DNS for these domains were analyzed
+and judged to be insignificant, and preliminary outreach was conducted
+to the contacts for the associated domains. The assessment concluded
+that these domains are highly likely to be obsolete and this document is
+intended to formalize that assessment.</t>
 
 <t>There are a small number of existing “int” domains nominally for
 “international databases” that are not defined by any standards
@@ -218,7 +212,7 @@ memo.</t>
 <reference anchor='RFC1035' target='https://www.rfc-editor.org/info/rfc1035'>
 <front>
 <title>Domain names - implementation and specification</title>
-<author fullname='P.V. Mockapetris' initials='P.V.' surname='Mockapetris'><organization/></author>
+<author fullname='P. Mockapetris' initials='P.' surname='Mockapetris'><organization/></author>
 <date month='November' year='1987'/>
 <abstract><t>This RFC is the revised specification of the protocol and format used in the implementation of the Domain Name System.  It obsoletes RFC-883. This memo documents the details of the domain name client - server communication.</t></abstract>
 </front>
@@ -330,7 +324,8 @@ memo.</t>
 <section numbered="false" anchor="acknowledgments" title="Acknowledgments">
 
 <t>This document was compiled with help from Ted Hardie and Michelle
-Cotton, with additional input by Jari Arkko and Warren Kumari.</t>
+Cotton, with additional input from Jari Arkko, John Klensin, Warren
+Kumari, Pete Resnick, George Michaelson and Toerless Eckert.</t>
 
 </section>
 
@@ -338,67 +333,68 @@ Cotton, with additional input by Jari Arkko and Warren Kumari.</t>
   </back>
 
 <!-- ##markdown-source:
-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
+H4sIAJJdhWMAA91Z0W7bOhJ951cQ6cO2QOTYuWnTBFhgvU26N7e3abZOt48L
+WqItNpKoS1Jx3aL/vmeGlCwn6eK+7MsWKGpJFHlm5syZGTXLMhFMqPS5vNCt
+07kKpllL06yc8sF1eeiclgemCQeysLUyjRdquXT6/lxe7S+aYFG/RorC5o2q
+sW3h1Cpkhbo32mdYkpXGB+tMnk1fCh9UU/xbVbbBSuykhWkd//LheDo9mx6L
+uw2dFLRrdMguaDMBkOcE0UrRtYUK2p/L2cvj14dydjp9JVpzLqT01gWnV3i0
+1Z6ut/XuUnWhtI6WZfgrsRkevJvIC4bJtyL6d6Ye37RuvUMj596bdaMLed3V
+S+28nPO2Jmx58eCn+fWcb8BXWodz/k1/Mnlze3V09WZ+fT26NzueHr+Un2GW
+WzkLn144c695QY6tz+XvFic1a10lULktgPQM7jpJ110THBZ+akwAukUgF0m7
+kvNaw/GKV2kEqjqXd6aexOD8zahGTWDhvlfmE/l3BetGTpnXiJoa3f7/c4ti
+EydLMnHnGOKcq5Ei95rgfnz7Zjb95WX/Ewwcfp7N+p9gZPr5y+z0OP08wQr6
+ebX4MJuenpxG41MiHtw4G2xuK4nTpP6alwpmEVBDLs5ijklnu6BTskZUtgFu
+y3ewrtaFgYUgvg+69jJY6bu2RVrQvhvlCnoZuwKEfH1y+ou8ufjkDyIS5dYI
+iSxDaP350dFms5kYb8kJR5yzePvoeHYyO52Uoa74HUpE5OHZ2Uk2m8bAwq3a
+E7w+uDjq6OryDZax1bQYT+bXi30HzG/fy2tQTS60uzc5/m11blYmj0b+C6Si
+f2eT6c/hLp1VxRJQM1jb1Qw96LxssEt1VNhNU2HBkVplXqlsOn11NplOp5O2
+WO1b8yqbzX5iDeN8S7sfICneZov5fNhIiCzLwHWQW+VBiNtSQxzzrtakkklq
+Qb+A+53n6Kpmu6e0nG20QgW50U6LQlNiKSIvMeOBSLeda63HC8st73p1efv2
+EJsW0hQ4FO5DYuBBzS87Xdt7BYo5W/PyeHKwbVbpe10lDBNEB7BM3VaaoHMA
+BEMyzb2t7qMJXg/K70vbVYVcaiRc43G0A9zB4AIb3qICiMEXqvIWaP7otA9e
+AhSxkgCBZ6Hj/ETCsL6zMXyBpAJU0ZeSSfR2bYqi0kI8Iy1ytoBjCC37/mnz
+5PfvKV1//JDGSyU9MU1V5huh5jWP3Y7kWtt7iB17pCL5U435xr7xh3JTmryU
+CiHZeyBgoFpWxpfYCDHifRp+hj2ggfhJ0dNho3WDd1My90vE7kwPg39Ntquq
+2h6OIpgM2ygfXQtyRdyDPu/zRjhdsW09fyYcINkSbyn3dFPgKbZEQZ7BOGDj
+05Rr1fg4+CmvFEWbHqu2dbZ1rEClRSo/YiyMHojp4HeVg58cDxLKHz8mQEwc
++tI1HEe5MaHE3sAWFTFarSuzNktToQbwGewF0bOR3FCZmgUfAmibavtEANn5
+2/1wTfZzFu93PpaLn1vhyU0PQyEod2VFEoXD9dcWOpLOJT4TTxq7oTcHl9ul
+t5UOOoWixyCeSpM+fH4skaz2fXakTIIWoM9aC3Yjpz9tQaKjvLe54V0KlM91
+2uKBNHxDk5bsEyOBSvVlQmm34+QjJ5HzokdXtqrshs4egkQOGnj6X0jSUzQK
+UO+5kc4MgiDnFXqObl1KrZCMiFpUqSipxFYNN2DLZDDexdGjYGN/sjcgVJFn
+rXKcn6qoTYNjEEU4k/W0VPcIMOUqykNOymXblgmTgsTeeYY9a0VdcvRDfzXO
+2DE7QJZCr0wTmTsoMAAUTnsvKmvvutazz+Z+2+Ql2iILxbx1qvEr2PYeHZB8
+jiL14hBezauOKz4VrUsQb8FxE/O4HSx7Pr9czP2LCUQRFfnHD8Zs2pMd5HQx
+RgxxzJ1ZksdIM0CqItIKbEv6BudAq02TEfIJyUa/AUGvoRT0Rml9kFc39ye9
+gTqSmG5z1CgZ9JPbMDPBAowuXXwL1WcXp8QrVo7EoKgz1LxBZ5Kdr8Z2vnpo
+J1i1Nk2KSk+Zp/C/2uEXD/BfBd7Kd0tPidwEbMaJSFs9TrZDIhaRbEn1wOm2
+gkTG0gF87ICHdsV6Rt1lb1fjVbszrL8adxgRU1SPyLUHLISF8kOrG7FInSRX
+Evi70VGYn39YXL2Q1yhc1t0NPds8h6B7eWNxHgclyWFMwRgA1PEeKNrRHc50
+sQfzMSrKMRwd8WQXce1HtMXktL6J/ovvb8m04mqk19+/9y04GgBgDKUeHyp2
+4gaEej1CGC/2EFKsKRGafZWvNdUr42Pj1XbcAxBEmoBoI0NNInsSHRkxOFWR
+p1X2mQxtvgOSLv4MEOIayjGqcsMu8ilSrKZ0EbNYSWL3Rm2HXmRoHWg44qq1
+UrlHWUW3FUhtauO5I0/t1PFrKt9UET7F+ZxrL+sttW8L7qQHtfVsVN/kRav2
+qlmkebJzdMSo1yw0xHGn/wJmGOSdZVnGsavURHi5p1mDoyOSyQ4JfUj4CZIh
+iUYc/p9A4RFZvknlLXWRDIof+BKJAN2zNMlRnxXbgdjXp3kiFr4BDB5EfRka
+pML4vPO+BzDqNuRQZH0wOGgne6kJ2CkVg13ovKMh/xHgBbV/Fs7pJ9HarMsQ
+qyYpN4mopWO6ZY9qv16LEuPmxjimdMGczoFMQvEMlxfIbYujYpMJ0JVGAxGH
+CA2dKmLPL/qRhpsqg4YIx+S2c55KvOvS6/AaJ1EKyMX1gk9NAW5sgB7HvdGj
+yaXyhuntdKD861u3pPlCXH6F77kktm01tGdpN029KceOjkUrZxQ1EB2siQ4Q
+5F6fdF4bt2vqkuJzVZS2JXdjUYr3Xv85msgUhJBaBLWEJPKZLRQBasDqkKVB
+dH+gw9niT7bMnPJoKEwaaq52XyaIt2NyGZ/o6rsqRLYiFjXGRAwYnoKK+RIL
+rdtSaadZjmufCD39g1Y1vbj33RGBUDl4CJdSs91PXBxBTKBIlehH0RdMxI96
+v2acIj1IBo5W0nPzFz1DzOmBHYqdSvsHbcGD4XzUxD6ct+J84AO6MxqP/9lp
+mNyqQJLrxyxMJBiFht9U8PQW46ogG790xToW8SV5kAZXFq8mxE8BrUuUwxmg
+gOPumBqAwcciVUHqpzCODNzbmxLi+ZF7ilodz0HFO9Rl0iakHftgSUlKZD7i
+Upk7Ck9EOWQM4QsPSMLM4wEUi5lMNJonaRoOjrMa+YL+Sl+TMDb89ZGipvsU
+3PuOjVSuU0dHFD/Yn8dRthRxwx/I0bARhpYcXRilT/8xbPdBgzc4HEY71X8M
+pb4KFOAZAvSkWoiNm6Q54vGUM5GfSxRY8uJWbnrxkX90cMEqzrpqP9E7OMpJ
+sN9xMCDGKLTqMCkHlD4KJshu6DvD1jZxVvc59KOnt6hRQdIHlaXK7yilry3V
+8Ofj70ZLvbL80WnZi9oL8f08+lwXfz1YqcrrA8wQV9kFlLJzkDWcSjhJJ3nC
+2n2wW2MY65YTCMDR3Zfi6Kf/Z8D6kt9h6qt0sY7Nw5On7otNJHjdwp1F/IxQ
+6qqNPfctbv1KH0MjAd+bHM/Q17yxIVAgebnaaZppWkgnv/qbckbO3d2dPZS/
+2bKR7yrSLrz0WVEMxLuuxpJDeUP0/qh9Y/K7Q/kPDdXUfJLSlaevtjj41mpX
+UcN8md9pR5T+D4NnTTycGQAA
 
 -->
 

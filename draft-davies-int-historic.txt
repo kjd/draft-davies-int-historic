@@ -4,23 +4,22 @@
 
 Network Working Group                                          K. Davies
 Internet-Draft                                                  A. Baber
-Updates: 1528, 1591, 1706 (if approved)                             IANA
-Intended status: Informational                          January 05, 2022
-Expires: July 9, 2022
+Updates: 1528, 1706 (if approved)                                   IANA
+Intended status: Informational                         November 28, 2022
+Expires: June 1, 2023
 
 
                 Deprecating infrastructure "int" domains
-                      draft-davies-int-historic-04
+                      draft-davies-int-historic-05
 
 Abstract
 
-   The document marks as historic any "int" domain names that were
-   designated for infrastructure purposes, and identifies them for
-   removal from the "int" top-level domain.  Any implementation that
-   involves these domains should be considered deprecated.  This
-   document also marks RFC 1528 and RFC 1706 as historic, and updates
-   RFC 1591 by removing the documented use of "int" for international
-   databases.
+   The document deprecates the use of any "int" domain names that were
+   designated for infrastructure purposes by the IETF, and identifies
+   them for removal from the "int" top-level domain.  Any implementation
+   that involves these domains should be considered deprecated.  This
+   document also requests moving the status of RFC 1528 and RFC 1706 to
+   historic.
 
 Status of This Memo
 
@@ -37,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on July 9, 2022.
+   This Internet-Draft will expire on June 1, 2023.
 
 Copyright Notice
 
@@ -50,15 +49,15 @@ Copyright Notice
    publication of this document.  Please review these documents
    carefully, as they describe your rights and restrictions with respect
    to this document.  Code Components extracted from this document must
-
-
-
-Davies & Baber            Expires July 9, 2022                  [Page 1]
-
-Internet-Draft         Infrastructure .int domains          January 2022
-
-
    include Simplified BSD License text as described in Section 4.e of
+
+
+
+Davies & Baber            Expires June 1, 2023                  [Page 1]
+
+Internet-Draft         Infrastructure .int domains         November 2022
+
+
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
 
@@ -77,8 +76,8 @@ Internet-Draft         Infrastructure .int domains          January 2022
    intergovernmental treaty organizations.
 
    The documented uses of infrastructural identifiers in the "int"
-   domain were largely experimental and in practice obsolete.  This
-   document formalizes moving the related specifications to historic
+   domain were largely experimental and are now in practice obsolete.
+   This document requests moving the related specifications to historic
    status, along with removing any associated delegations from the "int"
    zone in the domain name system.
 
@@ -102,23 +101,18 @@ Internet-Draft         Infrastructure .int domains          January 2022
    in-addr.arpa domain zone continues to be administered for this
    purpose [RFC1035].
 
-
-
-
-
-
-
-
-Davies & Baber            Expires July 9, 2022                  [Page 2]
-
-Internet-Draft         Infrastructure .int domains          January 2022
-
-
 2.3.  ip6.int
 
    The ip6.int domain was originally delegated for mapping host IPv6
    addresses to host names.  It was subsequently removed from the "int"
    zone, having been replaced by ip6.arpa for this purpose [RFC4159].
+
+
+
+Davies & Baber            Expires June 1, 2023                  [Page 2]
+
+Internet-Draft         Infrastructure .int domains         November 2022
+
 
 2.4.  nsap.int
 
@@ -150,25 +144,10 @@ Internet-Draft         Infrastructure .int domains          January 2022
    The specification for tpc.int [RFC1528] should be deemed historic as
    it no longer functions as described in the document.
 
-3.2.  RFC 1591
-
-   The use of the "int" top-level domain for international databases
-   should be deemed historic given the transfer of these functions to
-   the "arpa" top-level domain [RFC3172].
-
-3.3.  RFC 1706
+3.2.  RFC 1706
 
    The specification for nsap.int [RFC1706] should be deemed historic as
    it no longer functions as described in the document.
-
-
-
-
-
-Davies & Baber            Expires July 9, 2022                  [Page 3]
-
-Internet-Draft         Infrastructure .int domains          January 2022
-
 
 4.  IANA Considerations
 
@@ -183,6 +162,14 @@ Internet-Draft         Infrastructure .int domains          January 2022
    level domain.  This is, of course, true for any name in the DNS and
    should not be the sole basis to retain obsolete names.
 
+
+
+
+Davies & Baber            Expires June 1, 2023                  [Page 3]
+
+Internet-Draft         Infrastructure .int domains         November 2022
+
+
    Existing applications should eliminate any reliance upon these zones
    for their historic purpose.  The operator of the "int" domain should
    be cautious about any potential re-use of these domains for
@@ -195,9 +182,10 @@ Internet-Draft         Infrastructure .int domains          January 2022
    their purpose based on historical documentation.  As part of this
    inventory, the domains delegated for infrastructure identifier
    related purposes were studied.  Query patterns in the DNS for these
-   domains were analyzed and judged to be insignificant.  The assessment
-   concluded that these domains are highly likely to be obsolete and
-   this document is intended to formalize that assessment.
+   domains were analyzed and judged to be insignificant, and preliminary
+   outreach was conducted to the contacts for the associated domains.
+   The assessment concluded that these domains are highly likely to be
+   obsolete and this document is intended to formalize that assessment.
 
    There are a small number of existing "int" domains nominally for
    "international databases" that are not defined by any standards
@@ -218,14 +206,6 @@ Internet-Draft         Infrastructure .int domains          January 2022
               forwarding of ISO 8473 PDUs", ISO/IEC 10747:1994, October
               1994, <https://www.iso.org/standard/21417.html>.
 
-
-
-
-Davies & Baber            Expires July 9, 2022                  [Page 4]
-
-Internet-Draft         Infrastructure .int domains          January 2022
-
-
    [RFC1035]  Mockapetris, P., "Domain names - implementation and
               specification", STD 13, RFC 1035, DOI 10.17487/RFC1035,
               November 1987, <https://www.rfc-editor.org/info/rfc1035>.
@@ -238,6 +218,13 @@ Internet-Draft         Infrastructure .int domains          January 2022
    [RFC1591]  Postel, J., "Domain Name System Structure and Delegation",
               RFC 1591, DOI 10.17487/RFC1591, March 1994,
               <https://www.rfc-editor.org/info/rfc1591>.
+
+
+
+Davies & Baber            Expires June 1, 2023                  [Page 4]
+
+Internet-Draft         Infrastructure .int domains         November 2022
+
 
    [RFC1706]  Manning, B. and R. Colella, "DNS NSAP Resource Records",
               RFC 1706, DOI 10.17487/RFC1706, October 1994,
@@ -260,7 +247,8 @@ Notes (for removal before publication)
 Acknowledgments
 
    This document was compiled with help from Ted Hardie and Michelle
-   Cotton, with additional input by Jari Arkko and Warren Kumari.
+   Cotton, with additional input from Jari Arkko, John Klensin, Warren
+   Kumari, Pete Resnick, George Michaelson and Toerless Eckert.
 
 Authors' Addresses
 
@@ -272,14 +260,6 @@ Authors' Addresses
    United States of America
 
    Email: kim.davies@iana.org
-
-
-
-
-
-Davies & Baber            Expires July 9, 2022                  [Page 5]
-
-Internet-Draft         Infrastructure .int domains          January 2022
 
 
    Amanda Baber
@@ -297,40 +277,4 @@ Internet-Draft         Infrastructure .int domains          January 2022
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Davies & Baber            Expires July 9, 2022                  [Page 6]
+Davies & Baber            Expires June 1, 2023                  [Page 5]

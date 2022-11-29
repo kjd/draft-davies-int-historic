@@ -1,12 +1,12 @@
 ---
 title: Deprecating infrastructure "int" domains
 abbrev: Infrastructure .int domains 
-docname: draft-davies-int-historic-04
+docname: draft-davies-int-historic-05
 stand_alone: true
 ipr: trust200902
 kw: Internet-Draft
 cat: info 
-updates: 1528, 1591, 1706
+updates: 1528, 1706
 pi:
   sortrefs: yes
   symrefs: yes
@@ -57,12 +57,12 @@ informative:
 
 --- abstract
 
-The document marks as historic any "int" domain names that were
-designated for infrastructure purposes, and identifies them for removal
-from the "int" top-level domain. Any implementation that involves these
-domains should be considered deprecated. This document also marks 
-RFC 1528 and RFC 1706 as historic, and updates RFC 1591 by removing
-the documented use of "int" for international databases.
+The document deprecates the use of any "int" domain names that were
+designated for infrastructure purposes by the IETF, and identifies
+them for removal from the "int" top-level domain.  Any implementation
+that involves these domains should be considered deprecated.  This
+document also requests moving the status of RFC 1528 and RFC 1706 to
+historic.
 
 --- middle
 
@@ -80,8 +80,8 @@ declared the appropriate home for infrastructural identifier spaces
 domains was limited to only intergovernmental treaty organizations.
 
 The documented uses of infrastructural identifiers in the "int" domain
-were largely experimental and in practice obsolete. This document
-formalizes moving the related specifications to historic status, along
+were largely experimental and are now in practice obsolete. This document
+requests moving the related specifications to historic status, along
 with removing any associated delegations from the "int" zone in the
 domain name system.
 
@@ -141,12 +141,6 @@ transmission {{RFC1528}}.
 The specification for tpc.int {{RFC1528}} should be deemed historic
 as it no longer functions as described in the document.
 
-## RFC 1591
-
-The use of the "int" top-level domain for international databases should
-be deemed historic given the transfer of these functions to the "arpa"
-top-level domain {{RFC3172}}.
-
 ## RFC 1706
 
 The specification for nsap.int {{RFC1706}} should be deemed historic
@@ -172,14 +166,15 @@ intergovernmental treaty organizations.
 
 # Additional Information
 
-This document is the result of an comprehensive inventory conducted
-by the IANA team of .int domains to accurately establish and record
-their purpose based on historical documentation. As part of this
-inventory, the domains delegated for infrastructure identifier
-related purposes were studied. Query patterns in the DNS for these
-domains were analyzed and judged to be insignificant. The
-assessment concluded that these domains are highly likely to be
-obsolete and this document is intended to formalize that assessment.
+This document is the result of an comprehensive inventory conducted by
+the IANA team of .int domains to accurately establish and record their
+purpose based on historical documentation. As part of this inventory,
+the domains delegated for infrastructure identifier related purposes
+were studied. Query patterns in the DNS for these domains were analyzed
+and judged to be insignificant, and preliminary outreach was conducted
+to the contacts for the associated domains. The assessment concluded
+that these domains are highly likely to be obsolete and this document is
+intended to formalize that assessment.
 
 There are a small number of existing "int" domains nominally for
 "international databases" that are not defined by any standards
@@ -199,5 +194,6 @@ I-D source is maintained at: https://github.com/kjd/draft-davies-int-historic
 {:numbered="false"}
 
 This document was compiled with help from Ted Hardie and Michelle
-Cotton, with additional input by Jari Arkko and Warren Kumari.
+Cotton, with additional input from Jari Arkko, John Klensin, Warren
+Kumari, Pete Resnick, George Michaelson and Toerless Eckert.
 
